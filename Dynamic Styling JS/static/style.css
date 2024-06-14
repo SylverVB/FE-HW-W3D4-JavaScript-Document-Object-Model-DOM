@@ -1,0 +1,65 @@
+#box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.hover-effect {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(79, 79, 225);
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.click-effect {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.dblclick-effect {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(179, 99, 179);
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+.context-effect {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+#animate-button {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid rgb(18, 96, 92);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#animate-button:hover {
+    background-color: #45a049;
+}
+
+.animationjs {
+    animation: example-animation 1s forwards;
+}
+
+.animation-box {
+    margin: 5px 0 5px 20px;
+}
+
+@keyframes example-animation {
+    from { transform: scale(1); }
+    to { transform: scale(1.5); }
+}

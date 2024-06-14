@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Dynamic Styling JS/static/script.js"></script>
+    <link rel="stylesheet" href="../Dynamic Styling JS/static/style.css">
+    <title>Dynamic Styling</title>
+</head>
+<body>
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div class="hover-effect" onmouseover="changeHoverColor(this)" onmouseout="resetHoverColor(this)">Hover over me</div>
+    <div class="click-effect" onclick="clickEffect(this)">Click me</div>
+    <div class="dblclick-effect" ondblclick="doubleClickEffect(this)">Double-click me</div>
+    <div class="context-effect" oncontextmenu="contextMenuEffect(this); return false;">Right-click me</div>  <!-- Using return false to prevent the context menu from showing up -->
+    <button id="animate-button" onclick="animateOnce()">Animate me</button>
+    <div class="animation-box" onclick="animateBox(this)">Click to Animate Box</div>
+
+</body>
+</html>

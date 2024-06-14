@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<script src="../Form Manipulation JS/script.js" defer></script>
+<title>Form Manipulation</title>
+</head>
+<body>
+    <main class="container my-5">
+        <h1 class="display-5 text-center">Contact Me</h1>
+        <div class="dropdown-divider bg-info my-5"></div>
+        <form onsubmit="handleSubmit(event)" class="row g-3 bg-light p-4 border rounded shadow" novalidate>
+            <div class="form-floating col-12 mb-3">
+                <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z]+ [A-Za-z]+"placeholder="John Doe" required>
+                <label for="name">Full Name</label>
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Please enter your full name.</div>
+              </div>
+            <div class="form-floating col-12 col-md-6 mb-3">
+                <input type="email" class="form-control" id="email" name="email" pattern="[\w]+@[\w]+[.][a-z]{2,3}" placeholder="name@example.com" required>
+                <label for="email">Email</label>
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+            <div class="form-floating col-12 col-md-6 mb-3">
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="[\d]{3} [\d]{3} [\d]{4}" placeholder="504 877 5309" required>
+                <label for="phone">Phone Number</label>
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Please enter a 10 digit phone number e.g. 504 867 5309</div>
+              </div>
+            <div class="form-floating col-12 mb-3">
+                <textarea  class="form-control" id="message" name="message"  placeholder="name@example.com" style="height:100px"></textarea>
+                <label for="message">Message</label>
+                <div class="valid-feedback">Correct</div>
+                <div class="invalid-feedback">Please include a message</div>
+              </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+    </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
